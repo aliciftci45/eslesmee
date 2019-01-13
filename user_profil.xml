@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idResim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userProfil"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/selectPicture"
+        android:layout_width="225dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="21dp"
+        android:contentDescription="@string/profilpicture"
+        android:onClick="profilPicture"
+        app:layout_constraintBottom_toTopOf="@+id/idAge"
+        app:layout_constraintEnd_toStartOf="@+id/idMatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/resim2" />
+
+    <Spinner
+        android:id="@+id/age"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idAge"
+        app:layout_constraintTop_toBottomOf="@+id/idMatch" />
+
+    <TextView
+        android:id="@+id/idAge"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/ya_aral_n_z_giriniz"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idJob"
+        app:layout_constraintEnd_toStartOf="@+id/age"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPicture" />
+
+    <TextView
+        android:id="@+id/idJob"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/mesle_iniz_nedir"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idHobi"
+        app:layout_constraintEnd_toStartOf="@+id/job"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idAge" />
+
+    <TextView
+        android:id="@+id/idHobi"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:text="@string/yapmaktan_en_ok_ho_land_n_z_ey_nedir"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idMusic"
+        app:layout_constraintEnd_toStartOf="@+id/hobi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idJob" />
+
+    <TextView
+        android:id="@+id/idMusic"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/en_sevdi_iniz_m_zik_t_r_nedir"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idSex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idHobi" />
+
+    <TextView
+        android:id="@+id/idSex"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/karsı"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/sex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMusic" />
+
+    <Spinner
+        android:id="@+id/job"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/idJob"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/hobi"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/sex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idHobi"
+        app:layout_constraintTop_toBottomOf="@+id/job" />
+
+    <Spinner
+        android:id="@+id/music"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/idMatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/idMusic"
+        app:layout_constraintTop_toBottomOf="@+id/idHobi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/sex"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/idMatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idSex"
+        app:layout_constraintTop_toBottomOf="@+id/music"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:layout_width="137dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="connection"
+        android:text="@string/e_le_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="47dp"
+        android:text="@string/burc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/idSex"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSex" />
+
+    <Spinner
+        android:id="@+id/burc"
+        android:layout_width="84dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/idMatch"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/idMatch"
+        android:layout_width="106dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="Save"
+        android:text="@string/kaydet"
+        app:layout_constraintBottom_toTopOf="@+id/age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectPicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
